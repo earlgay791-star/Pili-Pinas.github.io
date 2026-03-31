@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PILI-PINAS</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Tahoma, Tahoma ;
+}
+
+header{
+    background: #668965 	;
+    color:white;
+    padding:10px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}	
+
+.logo{
+    display:flex;
+    align-items:center;
+}
+
+.logo img{
+    width:50px;
+    margin-right:10px;
+}
+
+nav a{
+    color:white;
+    margin:10px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav a:hover{
+    text-decoration:underline;
+}
+
+.hero{
+    background:url("https://scontent.fmnl17-5.fna.fbcdn.net/v/t39.30808-6/651653130_122099054343068145_1620195936701792447_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=2a1932&_nc_eui2=AeEzsbtOlncQDb8hmMcu0GCG28_76fhwWsPbz_vp-HBawwzT5maA23s5avwWpVES-0bm1l3JiFF7kBClHFnzsHfg&_nc_ohc=poYpjglGOP4Q7kNvwHi6ZBZ&_nc_oc=Adr2A_D0Ub8SMEVCntscWw3fYPUCCsvepMKrxMH_xLH0VxEQtlRBhhd3O36HY1Swh-k&_nc_zt=23&_nc_ht=scontent.fmnl17-5.fna&_nc_gid=J1akNu-ByhpVxSQRPq1gqA&_nc_ss=8&oh=00_AfwOuNNmCJaWEj0Ar5CxrgIL4LLqoVC_duUtqcIp9aQPbQ&oe=69C1FA74") center/cover;
+    color:white;
+    text-align:center;
+    padding:200px 50px;
+}
+
+.hero h1{
+    font-size:70px;
+}
+
+section{
+    padding:30px;
+    text-align:center;
+}
+
+.mission{ background:#a2cca1  ; }
+.vision{ background:#b9ddb8  ; }
+.members{
+ background:#d4ebd3;
+}
+
+.history{
+ background:#b9ddb8;
+}
+
+.member-container{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    flex-wrap:wrap;
+	align-items:flex-start;
+}
+
+.member{
+    text-align:center;
+    background:white ;s
+    padding:15px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+    transition:0.3s;
+    cursor:pointer;
+}
+
+.member:hover{
+    transform:translateY(-10px) scale(1.05);
+    box-shadow:0 20px 30px rgba(0,0,0,0.3);
+}
+
+.member img{
+    width:260px;
+    height:260px;
+    border-radius:12px;
+    object-fit:cover;
+    border:5px green;
+    transition:0.4s;
+}
+
+.member:hover img{
+    transform:scale(1.1);
+}
+
+footer{
+    background:#c8e3c7 ;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+
+.timeline{
+    display:flex;
+    gap:30px;
+    padding:30px;
+    overflow-x:auto;
+}
+
+.timeline-item{
+    min-width:320px;
+    background:white;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+    transition:0.5s;
+    opacity:0;
+    transform:translateY(40px);
+}
+
+.timeline-item.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+.timeline-item:hover{
+    transform:scale(1.05);
+}
+
+.timeline-item img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    border-radius:15px 15px 0 0;
+}
+
+.timeline-content{
+    padding:20px;
+}
+</style>
+
+</head>
+
+<body>
+<header>
+    <div class="logo">
+        <img src="https://scontent.fmnl17-4.fna.fbcdn.net/v/t1.15752-9/649642877_1974870437245299_7512702845381706456_n.png?_nc_cat=105&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeF_neKZ6JiB4YofmapAuN3nwSvbMyJ3S3DBK9szIndLcE0iCg580jtRYpSoYsM1kWt8i7mLFlRue73cCAh8zdxJ&_nc_ohc=QH-x9SyjU7EQ7kNvwGqD0PG&_nc_oc=AdpT-KCm4t2UadEUGeikyG4KQyXSxMRB4QdFmVdwG4W4dXhSA-tPaD9fUR9jP7h-byc&_nc_zt=23&_nc_ht=scontent.fmnl17-4.fna&_nc_ss=8&oh=03_Q7cD4wGTNHoYvnJbItM17ZDgWXUCAroTxX1efR5ukpgpln1qkg&oe=69E39A0B">
+        <h2>Pili-Pinas</h2>
+    </div>
+
+    <nav>
+        <a href="#mission">Misyon</a>
+        <a href="#vision">Visyon</a>
+        <a href="#members">Members</a>
+    </nav>
+</header>
+
+<div class="hero">
+<p>  </p>
+</div>
+
+
+<section id="mission" class="mission">
+    <h1>Mission</h1>
+    <p><h2>A country where every vote is a ray of light guiding the Philippines towards leadership that is honest, just,<div> 
+	and truly concerned for the people—where the people are aware, critical, and have a strong stance in choosing their leader.<div>
+	
+</p></h2>
+</section>
+
+<section id="vision" class="vision">
+    <h1>Vision</h1>
+    <p><h2>Enlighten the minds of Filipino voters through knowledge and awareness, so that every vote becomes a wise decision..<div>
+	A step that chooses a leader with integrity and a heart that serves the people..<div>
+</p>
+</section>
+ 
+<section id="history" class="history">
+<h1>History of Women’s Right to Vote</h1>
+
+<div class="timeline">
+
+<div class="timeline-item">
+<img src="	">
+<div class="timeline-content">
+<h2>1848</h2>
+<p>Seneca Falls Convention in USA led by Elizabeth Cady Stanton and Lucretia Mott.</p>
+</div>
+</div>
+
+<div class="timeline-item">
+<img src="">
+<div class="timeline-content">
+<h2>1893</h2>
+<p>New Zealand became the first country to grant women the right to vote.</p>
+</div>
+</div>
+
+<div class="timeline-item">
+<img src="">
+<div class="timeline-content">
+<h2>1902–1906</h2>
+<p>Australia granted voting rights. Finland gave full political rights.</p>
+</div>
+</div>
+
+<div class="timeline-item">
+<img src="">
+<div class="timeline-content">
+<h2>1918–1920</h2>
+<p>War contributions helped UK and USA grant voting rights.</p>
+</div>
+</div>
+
+<div class="timeline-item">
+<img src="">
+<div class="timeline-content">
+<h2>Global Spread</h2>
+<p>Canada, Germany, France, and Japan followed.</p>
+</div>
+</div>
+
+<div class="timeline-item">
+<img src="">
+<div class="timeline-content">
+<h2>Philippines 1937</h2>
+<p>Filipino women gained voting rights after a nationwide plebiscite.</p>
+</div>
+</div>
+</section>
+
+<section id="members" class="members">
+    <h2>Our Members</h2>
+
+    <div class="member-container">
+
+        <div class="member">
+            <img src="https://scontent.fmnl17-8.fna.fbcdn.net/v/t1.15752-9/648349453_1434724867548480_1379647410977309232_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeHCMIhZ7rbFeyhvkeqiY5fJhUeIfAGW8rCFR4h8AZbysFPXud23Ekt9e9zNeqxH_0MYknaJPewLD5-Jn5cJsIN2&_nc_ohc=lqUwtkmzqacQ7kNvwHmogf_&_nc_oc=Adrzpf32IOmLhcT2B_QwlON9eIZsEnO17lHytxqin4lshYJZcng-XVJQBNPJp2nOixo&_nc_zt=23&_nc_ht=scontent.fmnl17-8.fna&_nc_ss=8&oh=03_Q7cD4wHHG46HJAL7aEUt_NYkyqrSEZ1bqhQrWFrZPrUEuQQvPg&oe=69E382AF">
+            <h3>DEAD OR ALIVE</h3>
+        </div>
+
+        <div class="member">
+            <img src="https://scontent.fmnl17-2.fna.fbcdn.net/v/t1.15752-9/649672256_2123131238528165_5661550866662894951_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeFjGuFP0clYhBFud2Ew4EMCPdxVeZ2_zXQ93FV5nb_NdD76l7LgRBktXIwf2FDRaWTx55bDsPW69Oo4R7NMdrZF&_nc_ohc=XFf748TptXMQ7kNvwEtXjki&_nc_oc=AdpRNr1vd_WXi8-ojl1ETLzuF2MOqy8_TZuGurAViZSK3tjv3tM-a17u8VKXX-T4onE&_nc_zt=23&_nc_ht=scontent.fmnl17-2.fna&_nc_ss=8&oh=03_Q7cD4wHpgqGZH5WVzzoreSkne1h462cKXzFOoKjWx7rJAgRD7Q&oe=69E393AF">
+            <h3>DANIEL B. MORADA</h3>
+        </div>
+
+        <div class="member">
+            <img src="https://scontent.fmnl17-5.fna.fbcdn.net/v/t1.15752-9/647120413_2382485455590746_714000184340016617_n.png?_nc_cat=110&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeEIGdcEdXX2VG0viI92W-qPFT6go8ScQg0VPqCjxJxCDfukwEcSkE7zGD4gRw9bPFPO93MW2-tC3R8F6fYfqhnY&_nc_ohc=ZSs3UW9U6nwQ7kNvwEorxUv&_nc_oc=AdqHQg_pWWwYkJoTwPw4k9fsrYqBy0TWbb6nMuvMs5YjE2wPAlbx6ocZE1zSt5h3264&_nc_zt=23&_nc_ht=scontent.fmnl17-5.fna&_nc_ss=8&oh=03_Q7cD4wHBA2bO9grTIcCbT0rY-nQEgWtr4MXm6nQdXgiUuZlU3g&oe=69E3A6BA">
+            <h3>BETHANY PALER</h3>
+        </div>
+		
+    </div>
+</section>
+
+<footer>
+    <p>
+    </p>
+</footer>
+<script>
+const items = document.querySelectorAll(".timeline-item");
+
+window.addEventListener("scroll", () => {
+items.forEach(item => {
+const top = item.getBoundingClientRect().top;
+if(top < window.innerHeight - 50){
+item.classList.add("show");
+}
+});
+});
+</script>	
+</body>
+</html>
